@@ -41,7 +41,7 @@ python push_to_talk_chat.py
 
 ### NAO Robot Tutoring Condition
 
-⚠️ The robotic system requires running **two programs simultaneously** using different Python versions.
+The robotic system requires running **two programs simultaneously** using different Python versions.
 
 #### Step 1: Start the NAO speech server (Python 2.7)
 
