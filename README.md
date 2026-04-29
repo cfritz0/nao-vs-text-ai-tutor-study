@@ -4,14 +4,16 @@ This repository contains the code used for the thesis:
 
 **"Comparing Learning Outcomes from Studying with a Text-Based Chatbot vs a NAO Robot Chatbot"**
 
+---
+
 ## Overview
 
 This project implements two tutoring systems:
 
-* A **text-based AI tutor**
-* An **embodied NAO robot tutor**
+* A **text-based AI tutor** (`text_chat.py`)
+* An **embodied NAO robot tutor** (multi-script system)
 
-Both systems use a Large Language Model (LLM) to generate responses, allowing comparison of interaction modalities while keeping instructional content consistent.
+Both systems connect to the same Large Language Model (LLM) to generate responses, ensuring that differences in learning outcomes are due to the mode of interaction rather than differences in instructional content.
 
 ---
 
@@ -24,18 +26,29 @@ Both systems use a Large Language Model (LLM) to generate responses, allowing co
 
 ---
 
-## Running the System
+## Running the Systems
 
-### Text-Based Tutoring Condition
+### Text-Based Tutoring Condition (Standalone)
+
+The text-based system runs independently and does not require the NAO robot.
+
+#### Steps:
 
 1. Open a terminal or command prompt
-2. Run the text-based program:
+2. Run:
 
 ```bash
-python push_to_talk_chat.py
+python text_chat.py
 ```
 
-3. Type questions directly into the interface and receive responses.
+#### Description:
+
+* This program provides a **text-only interface** for interacting with the AI tutor.
+* Users type questions directly into the terminal.
+* The program sends these inputs to the LLM.
+* The LLM generates a response, which is returned and displayed as text.
+
+This system represents the **text-based tutoring condition** used in the study.
 
 ---
 
